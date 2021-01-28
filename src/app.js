@@ -25,14 +25,14 @@ app.use(express.static(publicDirectoryPath));
 app.get("/", (req, res) => {
   //   res.send("<h1>Home page12</h1>");
   res.render("index", {
-    title: "Home Page!!!",
+    title: "Home Page",
   });
 });
 
 app.get("/help", (req, res) => {
   //   res.send("Help page");
   res.render("help", {
-    title: "Help page!!!",
+    title: "Help page",
     helpText: "This is some helpful text.",
   });
 });
@@ -40,7 +40,7 @@ app.get("/help", (req, res) => {
 app.get("/about", (req, res) => {
   //   res.send("About page");
   res.render("about", {
-    title: "About page!!!",
+    title: "About Me",
   });
 });
 
@@ -87,8 +87,8 @@ app.get("/products", (req, res) => {
 
 app.get("/help/*", (req, res) => {
   res.render("help", {
-    title: "Help Article Page!!!",
-    message: "Help article not found!!!",
+    title: "Help Article Page",
+    message: "Help article not found",
   });
 });
 
